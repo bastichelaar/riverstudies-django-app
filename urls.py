@@ -5,11 +5,11 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    (r'^list/', 'riverstudies.riverview.views.list'),
-    (r'^$','riverstudies.riverview.views.index'),
+    (r'^list/', 'riverview.views.list'),
+    (r'^$','riverview.views.index'),
 
-    (r'^view/', include('riverstudies.riverview.urls')),
-    (r'^page/', include('riverstudies.page.urls')),
+    (r'^view/', include('riverview.urls')),
+    (r'^page/', include('page.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
