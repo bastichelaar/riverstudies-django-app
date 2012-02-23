@@ -5,7 +5,7 @@ import json
 with open('/app/conf/environment.json') as f:
     env = json.load(f)
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 TEMPLATE_DIRS = (
@@ -14,6 +14,8 @@ TEMPLATE_DIRS = (
 
 MEDIA_URL = '/app/media/'
 STATIC_URL = '/app/static/'
+
+ROOT_URLCONF = 'urls'
 
 DATABASES = {
     'default': {
