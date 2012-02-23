@@ -12,8 +12,8 @@ TEMPLATE_DIRS = (
         '/app/riverstudies/templates'
         )
 
-MEDIA_URL = '/media/'
-STATIC_URL = '/static/'
+MEDIA_URL = '/app/media/'
+STATIC_URL = '/app/static/'
 
 DATABASES = {
     'default': {
